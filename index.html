@@ -10,28 +10,36 @@
   <body
     class="bg-gradient-to-r from-blue-800 via-blue-700 to-blue-600 w-full h-screen flex justify-center items-center"
   >
-    <div class="w-96 bg-white rounded-2xl p-8">
-      <img src="/file/clock.png" alt="" />
-      <h1>1:24:03</h1>
-      <div>
-        <select>
-          <option value="hour" selected hidden>Hour</option>
-          <option value="00">00</option>
-          <option value="01">01</option>
-          <option value="02">02</option>
-          <option value="03">03</option>
-        </select>
+    <div
+      class="w-96 bg-white rounded-2xl p-8 flex flex-col justify-center items-center"
+    >
+      <img src="/file/clock.png" alt="clock" class="w-36" />
+      <h1 class="text-3xl py-4 font-bold tracking-widest">5:24:33</h1>
+      <div class="flex gap-5 w-full">
+        <div class="border w-full px-2 py-1 cursor-pointer rounded-lg">
+          <select class="w-full outline-none border-none">
+            <option value="hour" selected hidden>Hour</option>
+            <option value="00">00</option>
+            <option value="01">01</option>
+            <option value="02">02</option>
+            <option value="03">03</option>
+          </select>
+        </div>
+        <div class="border w-full px-2 py-1 cursor-pointer rounded-lg">
+          <select class="w-full outline-none border-none">
+            <option value="hour" selected hidden>Hour</option>
+            <option value="00">00</option>
+            <option value="01">01</option>
+            <option value="02">02</option>
+            <option value="03">03</option>
+          </select>
+        </div>
       </div>
-      <div>
-        <select>
-          <option value="hour" selected hidden>Hour</option>
-          <option value="00">00</option>
-          <option value="01">01</option>
-          <option value="02">02</option>
-          <option value="03">03</option>
-        </select>
-      </div>
-      <button>set alarm</button>
+      <button
+        class="w-full bg-blue-600 text-white py-2 rounded-lg mt-5 cursor-pointer hover:bg-blue-700 duration-200"
+      >
+        set alarm
+      </button>
     </div>
 
     <script src="script.js"></script>
