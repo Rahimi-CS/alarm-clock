@@ -1,15 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Alarm Clock</title>
-</head>
-<body>
-    
+  </head>
+  <body
+    class="bg-gradient-to-r from-blue-800 via-blue-700 to-blue-600 w-full h-screen flex justify-center items-center"
+  >
+    <div class="w-96 bg-white rounded-2xl p-8">
+      <img src="/file/clock.png" alt="" />
+      <h1>1:24:03</h1>
+      <div>
+        <select>
+          <option value="hour" selected hidden>Hour</option>
+          <option value="00">00</option>
+          <option value="01">01</option>
+          <option value="02">02</option>
+          <option value="03">03</option>
+        </select>
+      </div>
+      <div>
+        <select>
+          <option value="hour" selected hidden>Hour</option>
+          <option value="00">00</option>
+          <option value="01">01</option>
+          <option value="02">02</option>
+          <option value="03">03</option>
+        </select>
+      </div>
+      <button>set alarm</button>
+    </div>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
